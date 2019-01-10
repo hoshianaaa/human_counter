@@ -71,7 +71,6 @@ pinMode(buttonPin, INPUT_PULLUP);//Inputモードでプルアップ
 void loop() {
 
 
-
   
 
   NOW_SECOND = millis();
@@ -110,7 +109,7 @@ void loop() {
     Serial.println(" cm");
 
     PRESENT_SECOND = millis();
-
+  }
 
 
     if((Distance < 50) && (sensorFlag == 0)){sensorFlag = 1;Count++;digitalWrite(sensorLED,HIGH);}
@@ -217,7 +216,7 @@ void loop() {
       delay(50);
 
     }
-  }
+
 
   delay(100);
 
